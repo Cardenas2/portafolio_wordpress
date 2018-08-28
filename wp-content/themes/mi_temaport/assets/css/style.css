@@ -86,7 +86,7 @@ ul.sub-menuPortafolio a{
 .imgPrincipal{
   position: relative;
   height: 250px;
-  background:url(../img/calle.jpg);
+  background:url(../images/calle.jpg);
 }
 @media screen and (min-width: 570px){
   .imgPrincipal{
@@ -122,6 +122,7 @@ p{
 
 .imgPrincipal__textoEscrito{
   font-weight: bold;
+  color:#f9f7f7;
   padding: 3em 0;
 }
 .menuPortafolio1__logo , .menuPortafolio2__logo{

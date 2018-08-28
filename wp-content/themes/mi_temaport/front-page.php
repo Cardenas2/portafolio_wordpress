@@ -17,19 +17,16 @@
 
 		<a href="">
 			<div class="menuPortafolio1__logo ml-auto mr-auto">
-				<img src="assets/img/log-vc.jpg" alt="logotipo portafolio">
+
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-vc.jpg" alt="logotipo portafolio">
 			</div>
 		</a>
 		<ul class="nav justify-content-center">
-			<?php if ( have_posts() ) : ?>
-				<?php while ( have_posts() ) : the_post(); ?>    
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html">PORTAFOLIO</a>
-					</li>
-				<?php endwhile; ?>
-			<?php endif; ?>
 			
 			<li class="nav-item">
+				<a class="nav-link active" href="index.html">PORTAFOLIO</a>
+			</li>
+			-<li class="nav-item">
 				<a class="nav-link" href="sobre-mi.html">ALGO DE MI</a>
 			</li>
 			<li class="nav-item">
@@ -43,7 +40,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light menuPortafolio2">
 		<a class="menuPortafolio2__logo" href="#">
-			<img src="assets/img/log-vc.jpg" alt="logotipo portafolio">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-vc.jpg" alt="logotipo portafolio">
 		</a>
 		<button class="navbar-toggler icon-amburguesa" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon "></span>
@@ -85,6 +82,7 @@
 		<!--inicico submenu-->
 		<div class="row submenu">
 			<ul class="nav justify-content-center sub-menuPortafolio">
+
 			<li class="nav-item">
 				<a class="nav-link active" href="#">Todo</a>
 			</li>
@@ -105,17 +103,19 @@
 		
 		<div class=" container-fluid grid">
 			<div class="grid-item grid-item--height3">
+		
 				<figure class="grid__imageIndiv">
-					<img src="assets/img/CramerMailing.jpg" alt="Mailing emporesa cramer"/>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/CramerMailing.jpg" alt="Mailing emporesa cramer"/>
 					<figcaption>
 						<h3 class="grid__titulo">Mailing <span>Empresa Cramer</span> sabores</h3>
 						<a href="trabajos.html"></a>
 					</figcaption>			
 				</figure>
+			
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/ahorra-tu-negocio.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/ahorra-tu-negocio.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Publicidad <span>Cupon</span> Emprendedor</h3>
 						<a href="#"></a>
@@ -124,7 +124,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/calle.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/calle.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Fotografía <span>Calle</span> Londres</h3>
 						<a href="#"></a>
@@ -133,7 +133,7 @@
 			</div>
 			<div class="grid-item grid-item--height3">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/banner02.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/banner02.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Banner <span>Empresa</span> APPSOFT</h3>
 						<a href="#"></a>
@@ -142,7 +142,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/revistaTw.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/revistaTw.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Proyecto <span>TW LOGÍSTICA</span> Revista</h3>
 						<a href="#"></a>
@@ -152,7 +152,7 @@
 			
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/rosaazul.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/rosaazul.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Fotografia <span>Estudio</span></h3>
 						<a href="#"></a>
@@ -161,7 +161,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/fotologocomercio360.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/fotologocomercio360.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">lOGOTIPO <span>COMERCIO360,</span> Marca corporativa</h3>
 						<a href="#"></a>
@@ -170,7 +170,7 @@
 			</div>
 			<div class="grid-item grid-item--height3">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/img24.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/img24.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Calendario <span>año</span> 2013</h3>
 						<a href="#"></a>
@@ -180,7 +180,7 @@
 			
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/logotipodeportes.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/logotipodeportes.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">lOGOTIPO <span>Deportes</span></h3>
 						<a href="#"></a>
@@ -189,7 +189,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/iluspavoreal.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/iluspavoreal.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Ilustración <span>Pavo</span>Real</h3>
 						<a href="#"></a>
@@ -198,7 +198,7 @@
 			</div>
 			<div class="grid-item grid-item--height3">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/fotombabasonicos.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/fotombabasonicos.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo"><span>Facebook</span>Basonicos</h3>
 						<a href="#"></a>
@@ -207,7 +207,7 @@
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/publmutual.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/publmutual.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Publicidad <span>Mutual de Seguridad</span></h3>
 						<a href="#"></a>
@@ -216,7 +216,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/fotomalicia.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/fotomalicia.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Pelicula <span>Alicia</span>en el pais de las maravillas</h3>
 						<a href="#"></a>
@@ -225,7 +225,7 @@
 			</div>
 			<div class="grid-item grid-item--height3">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/redes1.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/redes1.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Post <span>Redes</span> Sociales</h3>
 						<a href="#"></a>
@@ -234,7 +234,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/tarjetasgreenbless.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/tarjetasgreenbless.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Tarjetas <span>greenbless</span></h3>
 						<a href="#"></a>
@@ -243,7 +243,7 @@
 			</div>
 			<div class="grid-item grid-item--height3">
 				<figure class="grid__imageIndiv">
-					<img  class="img-fluid" src="assets/img/tips.png" alt="">
+					<img  class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/tips.png" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Tips <span>Vender</span>por internet</h3>
 						<a href="#"></a>
@@ -252,7 +252,7 @@
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/dipticocomercio360.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/dipticocomercio360.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">DIPTICO <span>Comercio</span>360</h3>
 						<a href="#"></a>
@@ -261,7 +261,7 @@
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/fotomcaratula.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/fotomcaratula.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Propuesta Caratula <span>V de venganza</span> 2013</h3>
 						<a href="#"></a>
@@ -270,7 +270,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/fotologocenitchile.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/fotologocenitchile.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Logotipo <span>Cenit</span> Chile</h3>
 						<a href="#"></a>
@@ -279,7 +279,7 @@
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/gato.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/gato.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Fotografía <span>Gato</span>en la calle</h3>
 						<a href="#"></a>
@@ -288,7 +288,7 @@
 			</div>
 			<div class="grid-item grid-item--height2">
 				<figure class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/retratoh.jpg" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/retratoh.jpg" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Retrato <span>Hombre</span> año 2014</h3>
 						<a href="#"></a>
@@ -297,7 +297,7 @@
 			</div>
 			<div id="grid__imagePeque" class="grid-item">
 				<figure  class="grid__imageIndiv">
-					<img class="img-fluid" src="assets/img/pantallazo-c360.png" alt="">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/pantallazo-c360.png" alt="">
 					<figcaption>
 						<h3 class="grid__titulo">Landing <span>Comercio</span> 360</h3>
 						<a href="#"></a>
