@@ -20,18 +20,18 @@ h1{
   }
 }
 
-
-
 h2{
   font-size: 1.5em;
   color:#1687a7;
   font-weight: bold;
 }
 h3{
-  font-size: 1.1em;
+  font-size: 1em;
   color: #1687a7;
 }
-
+h3.grid__titulo{
+  font-size: 1.2em;
+}
 
 h4{
   font-size: 1em;

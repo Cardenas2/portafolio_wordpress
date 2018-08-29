@@ -1,4 +1,4 @@
-<?php wp_head()?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -8,9 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="<?php bloginfo('template_url') ?>/assets/css/style-masonry.css">
-	<link rel="<?php bloginfo('template_url') ?>/assets/css/style.css">
+	<?php wp_head()?>
 </head>
 <body class="contenedor">
 	<nav class="menuPortafolio1 py-4">
@@ -26,7 +24,7 @@
 			<li class="nav-item">
 				<a class="nav-link active" href="index.html">PORTAFOLIO</a>
 			</li>
-			-<li class="nav-item">
+			<li class="nav-item">
 				<a class="nav-link" href="sobre-mi.html">ALGO DE MI</a>
 			</li>
 			<li class="nav-item">
@@ -325,17 +323,20 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="assets/js/apps.js"></script>
+
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="assets/js/masonry.js"></script>
+
 
 
 <!-- or -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<?php wp_footer()?>
+
 </body>
 </html>
-<?php wp_footer()?>
+

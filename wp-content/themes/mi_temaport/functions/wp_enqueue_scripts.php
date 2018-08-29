@@ -23,7 +23,7 @@ function dl_enqueue_scripts() {
 
 
 	/* Register Scripts */
-	wp_register_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous', array('jquery'), 
+	wp_register_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), 
 		'4.1.3', true );
 	wp_register_script('apps', get_theme_file_uri('/assets/js/apps.js'), null, '2.1.0', true );
 	wp_register_script('masonry', get_theme_file_uri('/assets/js/masonry.js'), null, '2.1.0', true );
