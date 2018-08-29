@@ -132,15 +132,15 @@
 		
 		<div class=" container-fluid grid">
 			<div class="grid-item grid-item--height3">
-		
+			<?php if (have_posts()):while(have_posts()):the_post(); ?>
 				<figure class="grid__imageIndiv">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/CramerMailing.jpg" alt="Mailing emporesa cramer"/>
 					<figcaption>
-						<h3 class="grid__titulo">Mailing <span>Empresa Cramer</span> sabores</h3>
+						<h3 class="grid__titulo"><?php the_title(); ?></h3>
 						<a href="trabajos.html"></a>
 					</figcaption>			
 				</figure>
-			
+			<?php endwhile; endif; ?> 
 			</div>
 			<div class="grid-item">
 				<figure class="grid__imageIndiv">
