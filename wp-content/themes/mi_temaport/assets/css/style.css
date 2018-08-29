@@ -43,6 +43,10 @@ p{
   background-color: #f9f7f7;
 
 }
+.menuPortafolio1 li a:hover{
+  list-style: none;
+  text-decoration: none;
+}
 .menuPortafolio2 a{
   color:#dd0a35;
 
