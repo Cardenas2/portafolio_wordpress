@@ -26,7 +26,7 @@
 				'menu_id'        => 'primary-menu',
 				'container'      => false,
 				'depth'          => 2,
-				'menu_class' => 'nav justify-content-center'
+				'menu_class' => 'nav justify-content-center '
 				 
 			) );
 			?>
@@ -61,7 +61,7 @@
 				'menu_id'        => 'primary-menu',
 				'container'      => false,
 				'depth'          => 2,
-				'menu_class' => 'nav justify-content-center'
+				
 				 
 			) );
 			?>
@@ -100,8 +100,18 @@
 	<section class="container-fluid portafolio">
 		<!--inicico submenu-->
 		<div class="row submenu">
-			<ul class="nav justify-content-center sub-menuPortafolio">
-
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-2',
+				'menu_id'        => 'primary-menu',
+				'container'      => false,
+				'depth'          => 2,
+				'menu_class' => 'nav justify-content-center '
+				 
+			) );
+			?>
+			<!--<ul class="nav justify-content-center sub-menuPortafolio">
+			
 			<li class="nav-item">
 				<a class="nav-link active" href="#">Todo</a>
 			</li>
@@ -118,7 +128,7 @@
 				<a class="nav-link" href="#">Branding</a>
 			</li>
 			</ul>	
-		</div><!--fin  submenu-->
+		</div>fin  submenu-->
 		
 		<div class=" container-fluid grid">
 			<div class="grid-item grid-item--height3">
