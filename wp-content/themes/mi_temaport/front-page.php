@@ -19,7 +19,18 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-vc.jpg" alt="logotipo portafolio">
 			</div>
 		</a>
-		<ul class="nav justify-content-center">
+
+		<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+				'container'      => false,
+				'depth'          => 2,
+				'menu_class' => 'nav justify-content-center'
+				 
+			) );
+			?>
+		<!--<ul class="nav justify-content-center">
 			
 			<li class="nav-item">
 				<a class="nav-link active" href="index.html">PORTAFOLIO</a>
@@ -33,7 +44,7 @@
 			<li class="nav-item">
 				<a class="nav-link" href="contacto.html">CONTACTO</a>
 			</li>
-		</ul>
+		</ul>-->
 	</nav>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light menuPortafolio2">
@@ -44,7 +55,17 @@
 			<span class="navbar-toggler-icon "></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+				'container'      => false,
+				'depth'          => 2,
+				'menu_class' => 'nav justify-content-center'
+				 
+			) );
+			?>
+			<!--<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
 					<a class="nav-link menuPortafolio2_btn" href="index.html">PORTAFOLIO<span class="sr-only">(current)</span></a>
 				</li>
@@ -58,7 +79,7 @@
 					<a class="nav-link menuPortafolio2_btn" href="contacto.html">CONTACTO</a>
 				</li>
 			</ul>
-		</div>
+		</div>-->
 	</nav>
 	<header class="container-fluid imgPrincipal">
 		<h1 class="imgPrincipal__textoEscrito">
