@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset=<?php bloginfo('charset') ?>>
+	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?php bloginfo(); ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 		<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
+				'theme_location' => 'header-menu',
 				'menu_id'        => 'primary-menu',
 				'container'      => false,
 				'depth'          => 2,
@@ -43,12 +43,10 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
+				'theme_location' => 'header-menu',
 				'menu_id'        => 'primary-menu',
 				'container'      => false,
 				'depth'          => 2,
-				
-				 
 			) );
 			?>
 			

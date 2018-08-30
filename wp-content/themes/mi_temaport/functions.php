@@ -28,11 +28,3 @@ if ( version_compare( $GLOBALS['wp_version'], $theme_options['wp_min_version'], 
 	require get_template_directory() . '/functions/back-compat.php';
 	return;
 }
-
-register_nav_menus( array(
-    'menu-1' => esc_html__( 'Primary', 'theme-textdomain' ),
-) );
-
-register_nav_menus( array(
-    'menu-2' => esc_html__( 'Primary', 'theme-textdomain' ),
-) );
