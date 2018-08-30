@@ -30,21 +30,7 @@
 				 
 			) );
 			?>
-		<!--<ul class="nav justify-content-center">
-			
-			<li class="nav-item">
-				<a class="nav-link active" href="index.html">PORTAFOLIO</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="sobre-mi.html">ALGO DE MI</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="blog.html">BLOG</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="contacto.html">CONTACTO</a>
-			</li>
-		</ul>-->
+		
 	</nav>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light menuPortafolio2">
@@ -65,19 +51,5 @@
 				 
 			) );
 			?>
-			<!--<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link menuPortafolio2_btn" href="index.html">PORTAFOLIO<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link menuPortafolio2_btn" href="sobre-mi.html">ALGO DE MI</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link menuPortafolio2_btn" href="blog.html">BLOG</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link menuPortafolio2_btn" href="contacto.html">CONTACTO</a>
-				</li>
-			</ul>
-		</div>-->
+			
 	</nav>
