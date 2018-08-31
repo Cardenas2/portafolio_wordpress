@@ -28,7 +28,7 @@ function dl_enqueue_scripts() {
 	wp_register_script('apps', get_theme_file_uri('/assets/js/apps.js'), null, '2.1.0', true );
 	wp_register_script('masonry', get_theme_file_uri('/assets/js/masonry.js'), null, '2.1.0', true );
 	wp_register_script('progresscircle', get_theme_file_uri('/assets/js/progresscircle
-		.js'), null, $theme_data->get( '1.0' ), true );
+		.js'), array('jquery-migrate'), null, true );
 
 
 	if ($theme_options['woocommerce_enabled'] || $theme_options['slider']['flexslider'] || $theme_options['slider']['flickity']) {
@@ -48,10 +48,11 @@ function dl_enqueue_scripts() {
 		wp_enqueue_script( 'flickity' );
 	}
 	
-	wp_enqueue_script( 'bootstrap_js');
+	wp_enqueue_script( 'jquery-migrate' );
+	wp_enqueue_script( 'bootstrap_js' );
+	wp_enqueue_script('progresscircle' );
 	wp_enqueue_script( 'apps');
 	wp_enqueue_script( 'masonry');
-	wp_enqueue_script('progresscircle');
 
 }
 

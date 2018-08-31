@@ -52,7 +52,7 @@
 			
 			<?php
 			$arg = array(
-				'post_type'		 => 'portafolio',
+				'post_type'		 => 'porfolio',
 				'posts_per_page' => 10,
 				'paged'			 => $paged
 			);
@@ -62,13 +62,16 @@
 			while ( $get_arg->have_posts() ) {
 				$get_arg->the_post();
 			?>
-				
-			<div class="grid-item grid-item--height3">
+			
+			<?php $field = get_field_object('height'); ?>
+
+			<div class="grid-item <?= $field['value'] ?>">
 				<figure class="grid__imageIndiv">
 					<?php the_post_thumbnail() ?>
 					<figcaption>
+						<a href="<?php the_permalink() ?>">
 						<h3 class="grid__titulo"><?php the_title(); ?></h3>
-						<a href="<?php the_permalink() ?>">Link</a>
+						</a>
 					</figcaption>
 				</figure>
 			</div>

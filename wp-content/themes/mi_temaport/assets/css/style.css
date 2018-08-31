@@ -33,6 +33,10 @@ h3.grid__titulo{
   font-size: 1.2em;
 }
 
+figure.grid__imageIndiv h3.grid__titulo {
+  margin-top: 50px;
+}
+
 h4{
   font-size: 1em;
 }
