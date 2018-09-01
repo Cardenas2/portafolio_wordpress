@@ -8,7 +8,7 @@
 	<div class="curriculumDatos">	
 		<div class="row">
 			<div class="col-xs-12 col-sm-5 col-md-6 col-lg-4 ">
-				<img class="curriculumDatos__imagen  rounded img-fluid p-1" src="assets/img/fotoperfil.jpg" alt="imagen fotografía de perfil ">
+				<img class="curriculumDatos__imagen  rounded img-fluid p-1" src="assets/images/fotoperfil.jpg" alt="imagen fotografía de perfil ">
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 curriculumDatos__acerca">
 				<h2>Hola mi nombre es Vania </h2>
