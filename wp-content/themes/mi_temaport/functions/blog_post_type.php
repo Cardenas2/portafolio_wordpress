@@ -46,7 +46,7 @@ function blog_notice() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 10,
-		'menu_icon'             => 'dashicons-admin-page',
+		'menu_icon'             => 'dashicons-welcome-write-blog',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,

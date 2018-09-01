@@ -37,7 +37,7 @@ function dl_enqueue_scripts() {
 		.js'), array('jquery-migrate'), null, true );
 
 
-	if ($theme_options['woocommerce_enabled'] || $theme_options['slider']['flexslider'] || $theme_options['slider']['flickity']) {
+	
 
 		
 
@@ -45,7 +45,7 @@ function dl_enqueue_scripts() {
 
 		wp_register_script('jquery-migrate', get_theme_file_uri('/assets/js/lib/jquery-migrate.min.js'), array('jquery'), '3.0.0', true);
 
-	}
+	
 
 
 	/* Enqueue Scripts 
