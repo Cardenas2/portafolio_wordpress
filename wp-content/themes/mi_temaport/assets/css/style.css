@@ -228,9 +228,13 @@ img.curriculumDatos__imagen{
 
 /*blog*/
 
+.blog{
+  width: 100%;
+}
 .borde-caj{
+  padding: 1em;
+  margin-top: 1em;
   border:1px solid #D8D8D8;
-  margin:1em 0;
 }
 
 .btn-color{

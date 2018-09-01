@@ -1,45 +1,34 @@
 <?php get_header(); ?>
-<ul>
-	<?php
-	$arg = array(
-		'post_type'		 => 'News',
-		'posts_per_page' => 10
-	);
 
-	$get_arg = new WP_Query( $arg );
-
-	while ( $get_arg->have_posts() ) {
-		$get_arg->the_post();
-		?>
-
-		<li>
-			<?php the_post_thumbnail('medium');?>
-			<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-			</a>
-			<?php the_excerpt();?>
-		</li>
-
-		<?php } wp_reset_postdata();
-		?>
-
-
-	<section class=" container blog m-auto">
+<section class=" container blog m-auto">
 		<div class="row blog my-5 p-2">
-			
+
 			<div class="row">
-				
-				<div class="col-xs-12 col-md-6 col-lg-4">
+				<?php
+				$arg = array(
+					'post_type'		 => 'News',
+					'posts_per_page' => 10
+				);
+
+				$get_arg = new WP_Query( $arg );
+
+				while ( $get_arg->have_posts('posts_per_page=3&cat=-3') ) {
+					$get_arg->the_post();
+					?>
+					<div class="col-xs-12 col-md-6 col-lg-4 ">
 					<div class="card borde-caj">
-						<img class="card-img-top img-thumbnail" src="assets/img/revivir2.jpg" alt="Card image cap">
+						<?php the_post_thumbnail('medium')?>
 						<div class="card-body">
-							<h4 class="card-title">Aprendiendo a revivir</h4>
-							<p class="card-text">En el año 2009, comenzamos a realizar reuniones trimestrales con los padres cuyos hijos habían fallecido a causa del cáncer infantil; al principio fue muy dificil, no sabíamos muy bien que ibamos a hacer, ni como lo ibamos a llevar a cabo. Al mes de noviembre del 2014, hemos realizado 18 encuentros, donde en un principio solo participaban las madres. </p>
-							<a href="noticias.html#segunda-noticia"><button type="submit" class="btn btn-outline-info">Leer más</button></a>
+							<h4 class="card-title"><?php the_title(); ?></h4>
+							<p class="card-text"><?php the_excerpt();?></p>
+							<a href="http://rmurphey.com/"><button type="submit" class="btn btn-outline-info">Leer más</button></a>
 						</div>
-					</div>
-				</div><!--fin col-->
+					</div><!--fin class card-->
+				</div><!--col-->
 				
+				<?php } wp_reset_postdata();
+		    ?>
+		   
 			</div><!--fin row-->
 			
 			
@@ -75,4 +64,14 @@
 		</div>
 	</section>
 
-</ul>
+	<div class="col-xs-12 col-md-6 col-lg-4">
+		<div class="card borde-caj">
+			<img class="card-img-top img-thumbnail" src="<?php the_thumbnail(); ?>">
+			<div class="card-body">
+				<h4 class="card-title"><?php the_title(); ?></h4>
+				<p class="card-text"><?php the_excerpt();?></p>
+				<a href="noticias.html#segunda-noticia"><button type="submit" class="btn btn-outline-info">Leer más</button></a>
+			</div>
+		</div>
+	</div><!--fin col-->
+
