@@ -34,7 +34,7 @@ function dl_theme_setup() {
 	register_nav_menus(
 		array(
 			'header-menu'	=> __( 'Header Menu' ),
-			'footer-menu'	=> __( 'Footer Menu' ),
+			'header-submenu' =>__('Sub Menu'),
 		)
 	);
 

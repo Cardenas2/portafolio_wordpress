@@ -20,40 +20,23 @@
 		<div class="row submenu">
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-2',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'header-submenu',
+				'menu_id'        => 'submenu',
 				'container'      => false,
 				'depth'          => 2,
 				'menu_class' => 'nav justify-content-center '
 				 
 			) );
 			?>
-			<!--<ul class="nav justify-content-center sub-menuPortafolio">
-			
-			<li class="nav-item">
-				<a class="nav-link active" href="#">Todo</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Diseño Web</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Diseño gráfico</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Fotografia</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Branding</a>
-			</li>
-			</ul>	
-		</div>fin  submenu-->
+					
+		</div>
 		
 		<div class=" container-fluid grid">
 			
 			<?php
 			$arg = array(
 				'post_type'		 => 'porfolio',
-				'posts_per_page' => 10,
+				'posts_per_page' => 19,
 				'paged'			 => $paged
 			);
 
@@ -65,7 +48,7 @@
 			
 			<?php $field = get_field_object('height'); ?>
 
-			<div class="grid-item <?= $field['value'] ?>">
+			<div class="grid-item grid-item--height3<?= $field['value'] ?>">
 				<figure class="grid__imageIndiv">
 					<?php the_post_thumbnail() ?>
 					<figcaption>

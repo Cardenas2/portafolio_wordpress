@@ -83,15 +83,21 @@ p{
 .submenu ul{
   margin: 0 auto;
 }
+.submenu a{
+  color:#dd0a35;
+  padding: 0 0.5em;
+  text-decoration:none;
+}
 
 @media screen and (min-width: 570px){
-  .sub-menuPortafolio{
+  .sub-menu{
+
   padding: 1em 0;
 }
 }
 ul.sub-menuPortafolio a{
-  color:#1687a7;
-  padding: 0.5em;
+  color:#dd0a35;
+  padding: 1em;
 }
 .icon-amburguesa{
   padding: 0.5em;

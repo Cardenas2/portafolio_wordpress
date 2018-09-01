@@ -39,7 +39,7 @@ function portfolio_post_type() {
 		'description'           => __( 'portafolio trabajos principales', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => null,
+		'taxonomies'            => array( 'category', 'post_tag', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

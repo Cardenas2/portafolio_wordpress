@@ -14,6 +14,7 @@ $files = get_files_from( $theme_options['functions'] );
 
 foreach($files as $file) {
 	require_once $file;
+	
 }
 
 
@@ -27,4 +28,7 @@ foreach($files as $file) {
 if ( version_compare( $GLOBALS['wp_version'], $theme_options['wp_min_version'], '<' ) ) {
 	require get_template_directory() . '/functions/back-compat.php';
 	return;
+
 }
+
+
