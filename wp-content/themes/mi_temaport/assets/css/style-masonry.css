@@ -19,9 +19,9 @@ padding: 0; }
 
 .grid-item {
   max-width: 270px;
-  /*height: auto*/
+  height: 400px;
   float: left;
-  margin-top:2em;
+  margin-top:5em;
   }
 
 .grid-item--width2 { max-width: 270px; }

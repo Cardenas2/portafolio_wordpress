@@ -42,17 +42,17 @@
 
 			$get_arg = new WP_Query( $arg );
 
-			while ( $get_arg->have_posts() ) {
+			while ( $get_arg->have_posts('medium') ) {
 				$get_arg->the_post();
 			?>
 			
 			<?php $field = get_field_object('height'); ?>
 
-			<div class="grid-item grid-item--height3<?= $field['value'] ?>">
+			<div class="grid-item--height2<?= $field['value'] ?>">
 				<figure class="grid__imageIndiv">
 					<?php the_post_thumbnail() ?>
 					<figcaption>
-						<a href="<?php the_permalink() ?>">
+						<a href="<?php the_permalink(); ?>">
 						<h3 class="grid__titulo"><?php the_title(); ?></h3>
 						</a>
 					</figcaption>
