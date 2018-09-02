@@ -19,18 +19,14 @@ padding: 0; }
 
 .grid-item {
   max-width: 270px;
-  height: 400px;
   float: left;
-  margin-top:5em;
+  margin:1em;
   }
 
 .grid-item--width2 { max-width: 270px; }
-.grid-item--width3 { max-width: 480px; }
-.grid-item--width4 { max-width: 640px; }
+.grid-item--width3 { max-width: 270px; }
 
-.grid-item--height2 { height: 270px; }
-.grid-item--height3 { height:270px; }
-.grid-item--height4 { height:auto; }
+
 
 
 img.grid-item:hover {
@@ -41,7 +37,8 @@ img.grid-item:hover {
 
 @media screen and (min-width: 570px){
   .grid-item {
-  max-width: 260px;
+  max-width: 310px;
+  height: auto;
 
   }
 }
@@ -54,7 +51,6 @@ figure.grid__imageIndiv {
   overflow: hidden;
   min-width: 260px;
   max-width: 310px;
-  max-height: 450px;
   width: 100%;
   background: #e4d1d3;
   text-align: center;

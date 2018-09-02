@@ -23,7 +23,7 @@
 				'theme_location' => 'header-submenu',
 				'menu_id'        => 'submenu',
 				'container'      => false,
-				'depth'          => 2,
+				'depth'          => 3,
 				'menu_class' => 'nav justify-content-center '
 				 
 			) );
@@ -42,13 +42,13 @@
 
 			$get_arg = new WP_Query( $arg );
 
-			while ( $get_arg->have_posts('medium') ) {
+			while ( $get_arg->have_posts() ) {
 				$get_arg->the_post();
 			?>
 			
-			<?php $field = get_field_object('height'); ?>
+		
 
-			<div class="grid-item--height2<?= $field['value'] ?>">
+			<div class="grid-item<?= $field['value'] ?>">
 				<figure class="grid__imageIndiv">
 					<?php the_post_thumbnail() ?>
 					<figcaption>
