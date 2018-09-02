@@ -26,6 +26,7 @@ function dl_enqueue_scripts() {
 	wp_register_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array('jquery'), 
 		'4.1.3', true );
 
+	
 	wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', null, true );
 
 
@@ -46,7 +47,7 @@ function dl_enqueue_scripts() {
 		wp_register_script('jquery-migrate', get_theme_file_uri('/assets/js/lib/jquery-migrate.min.js'), array('jquery'), '3.0.0', true);
 
 	
-
+		
 
 	/* Enqueue Scripts 
 	if ( $theme_options['slider']['flexslider'] ) {

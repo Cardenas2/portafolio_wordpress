@@ -12,6 +12,18 @@ function makesvg(percentage, inner_text=""){
     classes = "success-stroke";
   }
 
+var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          
  var svg = '<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">'
      + '<circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9" />'
      + '<circle class="circle-chart__circle '+classes+'"'

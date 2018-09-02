@@ -16,7 +16,7 @@
 		<div class="container-fluid row m-3">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
 				<h3>
-					También me puedes encontrar en:
+					Si te a gustado mi trabajo puedes escribirme al correo o mandar un mensaje por este formulario.
 
 				</h3>
 				<p>cardenas.andrade.vania@gmail.com</p>
@@ -33,6 +33,9 @@
 						</div>
 						<div class="col-sm-12 p-1">
 							 <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+						<div class="col-sm-12 p-1">
+							<input type="text" class="form-control" placeholder="Asunto">
 						</div>
 						<div class="col-sm-12 p-1">
 							 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>

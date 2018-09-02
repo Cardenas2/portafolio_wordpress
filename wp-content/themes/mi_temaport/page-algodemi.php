@@ -75,14 +75,14 @@
 					<div class="circlechart" data-percentage="30">JS</div>
 					<div class="circlechart" data-percentage="50">FRONTEND</div>
 				</div>
-				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 				<script src="assets/js/progresscircle.js"></script> 
 				<script>
 
-					$('.circlechart').circlechart(); // Initialization
+					$('.circlechart').circlechart(); /// Initialization
 
 				</script>
-				<script type="text/javascript">
+				<!-- <script type="text/javascript">
 
 					var _gaq = _gaq || [];
 					_gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -95,7 +95,7 @@
 						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 					})();
 
-				</script>
+				</script> -->
 			</div><!--fin row habilidades-->
 			<div class="row my-4 py-4">
 				<div class="col-x-12 col-sm-6 col-md-6">

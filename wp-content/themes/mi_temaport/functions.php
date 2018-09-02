@@ -32,3 +32,5 @@ if ( version_compare( $GLOBALS['wp_version'], $theme_options['wp_min_version'], 
 }
 
 
+
+
