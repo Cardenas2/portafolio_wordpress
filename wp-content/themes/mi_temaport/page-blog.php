@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
 <section class=" container blog m-auto">
-		<div class="row blog my-5 p-2">
 
+		<div class="row blog my-5 p-2">
+			<ul>
 			<div class="row">
 				<?php
 				$arg = array(
@@ -17,7 +18,8 @@
 					?>
 					<div class="col-xs-12 col-md-6 col-lg-4 ">
 					<div class="card borde-caj">
-						<?php the_post_thumbnail('medium')?>
+						<?php the_post_thumbnail("medium")?>
+						
 						<div class="card-body">
 							<h4 class="card-title"><?php the_title(); ?></h4>
 							<p class="card-text"><?php the_excerpt();?></p>
@@ -28,7 +30,7 @@
 				
 				<?php } wp_reset_postdata();
 		    ?>
-		   
+		   </ul>
 			</div><!--fin row-->
 			
 			

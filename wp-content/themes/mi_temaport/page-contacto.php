@@ -1,7 +1,6 @@
 <?php get_header() ?>
 	<?php the_post() ?>
 
-	<?php the_title() ?>
 	<?php the_content(); ?>
 	
 	<?php if ( is_active_sidebar( 'contact_widget' ) ) : ?>
@@ -13,10 +12,11 @@
 	<section class="container-fluid contacto">
 	
 			<iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.935027408522!2d-70.72265548516927!3d-33.50306750759989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcaba840335f%3A0xb06df877196a723c!2sPablo+Suarez+7473%2C+Los+Cerrillos%2C+Cerrillos%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1534631394233" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<div class="row">
+
+		<div class="container-fluid row m-3">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
 				<h3>
-					Tambien me puedes encontrar en:
+					También me puedes encontrar en:
 
 				</h3>
 				<p>cardenas.andrade.vania@gmail.com</p>

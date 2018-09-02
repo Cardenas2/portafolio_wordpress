@@ -35,7 +35,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light menuPortafolio2">
 		<a class="menuPortafolio2__logo" href="#">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/log-vc.jpg" alt="logotipo portafolio">
+			<img src="<?php bloginfo(); ?>/assets/images/log-vc.jpg" alt="logotipo portafolio">
 		</a>
 		<button class="navbar-toggler icon-amburguesa" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon "></span>
