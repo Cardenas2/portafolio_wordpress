@@ -1,7 +1,7 @@
-# Wordpress Boilerplate
+# PORTAFOLIO DISEÑO FRONT END
 
 ## Introducción
-Esta es una plantilla básica, que tiene como objetivo ayudar a la gente que comienza recién a crear plantillas para Wordpress. Incorpora algunas de las últimas tecnologías implementadas por el equipo de Wordpress y también otras que le entregarán a los desarrolladores una base mínima para crear exitosamente un Theme.
+Este es mi trabajo final de el curso intensivo para ser diseñadora front end , en este sitio web van a ver mis trabajos que he realizado desde que comence a trabajar en diseño grafico multimedia.
 
 ### Uso de Paginación
 En la versión 1.1 se ha agregado la posibilidad de agregar paginación, para esos casos donde se desea mostrar más de los 10 posts que muestra por defecto Wordpress.
