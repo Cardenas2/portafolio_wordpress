@@ -18,7 +18,7 @@
 					?>
 					<div class="col-xs-12 col-md-6 col-lg-4 ">
 					<div class="card borde-caj">
-						<?php the_post_thumbnail("medium")?>
+						<?php the_post_thumbnail("img_noticias")?>
 						
 						<div class="card-body">
 							<h4 class="card-title"><?php the_title(); ?></h4>
