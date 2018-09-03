@@ -3,8 +3,12 @@
 ## Introducción
 Este es mi trabajo final de el curso intensivo para ser diseñadora front end , en este sitio web van a ver mis trabajos que he realizado desde que comence a trabajar en diseño grafico multimedia.
 
-### Uso de Paginación
-En la versión 1.1 se ha agregado la posibilidad de agregar paginación, para esos casos donde se desea mostrar más de los 10 posts que muestra por defecto Wordpress.
+### Idea Principal
+El trabajo cuenta con cuatro paginas, PORTAFOLIO, ALGO DE MI, BLOG y por último CONTACTO.
+En la primera seccion de portafolio muestro mis principales trabajos tanto de diseño gráfico como de fotografía. En la segunda seccion muestro mi curriculum, loss lugares en kllos que he trabajado , y lo que me gusta hacer. En la seccion de blog muestro una serie de noticias relacionadas al diseño grafico y web.
+La última seccion es de contacto donde se incluye un mapa con direccion y un formulario de contacto para futuros trabnajos.
+
+Las fuentes que utilice fueron 2, montserrat para los titulos y dosis para los parrafos.
 
 Para utilizar la paginación debemos llamar a la función `the_pagination()`. Y en el caso de utilizar la paginación en un Custom Post Type, deberemos entregar como parámetro el resultado de la búsqueda, así como se especifica en el siguiente código.
 
