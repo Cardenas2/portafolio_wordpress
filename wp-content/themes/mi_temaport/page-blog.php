@@ -23,7 +23,7 @@
 						<div class="card-body">
 							<h4 class="card-title"><?php the_title(); ?></h4>
 							<p class="card-text"><?php the_excerpt();?></p>
-							<a href="http://rmurphey.com/"><button type="submit" class="btn btn-outline-info">Leer más</button></a>
+							<a href="#"><button type="submit" class="btn btn-outline-info">Leer más</button></a>
 						</div>
 					</div><!--fin class card-->
 				</div><!--col-->

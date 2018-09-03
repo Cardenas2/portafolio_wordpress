@@ -10,7 +10,7 @@
 				<p>
 					<?php the_content() ?>
 				</p>
-				<a class="btn btn-primary mr-auto" href="http://localhost:8888/portafolio/" role="button">Volver</a>
+				<a class="btn btn-primary mr-auto" href="<?php bloginfo('url'); ?>" role="button">Volver</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6">
 				<?php the_post_thumbnail('trabajos-individuales') ?>

@@ -1,8 +1,6 @@
-
 <?php get_header() ?>
 
 <?php if ( have_posts() ) { ?>
-
 	<?php while ( have_posts() ) { ?>
 		<section class="container noticias">
 		<div class="row">
@@ -14,6 +12,8 @@
 				<p>
 					<?php the_content() ?>
 				</p>
+				
+				
 			</div>
 			
 			<div class="row container my-5 text-center cajanoticias">
@@ -26,15 +26,21 @@
 					<span class="contador2">0</span>
 				</div>
 				<div class="colxs-12 col-sm-4 col-md-4 py-3 ">
-					<a href="blog.html"><button type="button" class="btn btn-info">Volver</button></a>
+					<a href="#"><button type="button" class="btn btn-info">Volver</button></a>
 				</div>
 			</div><!--fin row interno-->
 
 		</div><!--fin row-->
 	</section>
+	
 		
 	<?php } ?>
 <?php } else { ?>
+	
+		
+		
+	
 <?php } wp_reset_query(); ?>
+
 
 <?php get_footer() ?>
