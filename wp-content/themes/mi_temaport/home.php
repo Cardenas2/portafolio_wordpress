@@ -50,7 +50,7 @@
 
 			<div class="grid-item<?= $field['value'] ?>">
 				<figure class="grid__imageIndiv">
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('index') ?>
 					<figcaption>
 						<a href="<?php the_permalink(); ?>">
 						<h3 class="grid__titulo"><?php the_title(); ?></h3>
